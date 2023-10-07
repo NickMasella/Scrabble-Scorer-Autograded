@@ -139,8 +139,6 @@ function scorerPrompt() {
 
 }
 
-
-
 let newPointStructure = transform(oldPointStructure);
 
 function runProgram() {
