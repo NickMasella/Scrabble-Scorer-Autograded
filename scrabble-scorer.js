@@ -33,10 +33,21 @@ function oldScrabbleScorer(word) {
 // don't change the names or your program won't work as expected. //
 
 function initialPrompt() {
-   console.log("Let's play some scrabble! Enter a word:");
+   return input.question("Let's play some scrabble! Enter a word:");
+   
 };
 
-let simpleScorer;
+function simpleScorer(word){
+   word = word.toUpperCase();
+	let letterPoints = "";
+ 
+	for (let i = 0; i < word.length; i++) {
+   letterPoints += `Points for '${word[i]}': 1\n`
+	  }
+	
+	return letterPoints;
+
+};
 
 let vowelBonusScorer;
 
@@ -51,7 +62,7 @@ function transform() {};
 let newPointStructure;
 
 function runProgram() {
-   initialPrompt();
+   console.log(oldScrabbleScorer(initialPrompt()));
    
 }
 
