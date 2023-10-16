@@ -46,6 +46,22 @@ function oldScrabbleScorer(word) {
 
 function initialPrompt() {
    let word = input.question("Let's play some scrabble! Enter a word: ");
+   // const hasNonAlphanumeric = (str) => {
+   //    for (let i = 0; i < str.length; i++) {
+   //      const charCode = str[i].charCodeAt();
+   //      if (
+   //        (charCode < 48 || charCode > 57) && // not 0-9
+   //        (charCode < 65 || charCode > 90) && // not A-Z
+   //        (charCode < 97 || charCode > 122) // not a-z
+   //      ) {
+   //        return true;
+   //      }
+   //    }
+   //    return false;
+   //  };
+   //  if (hasNonAlphanumeric(word)){
+
+   //  }
    // while (typeof word != typeof " "){
    //    word = input.question("Please enter a word:");
    // }
